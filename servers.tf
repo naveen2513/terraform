@@ -1,3 +1,4 @@
+
 data "aws_ami" "ami" {
   most_recent      = true
   name_regex       = "Centos-8-DevOps-Practice"
@@ -6,6 +7,7 @@ data "aws_ami" "ami" {
 data "aws_security_group"  "allow-all"{
   name = "allow-all"
 }
+
 
 
 variable "components" {
@@ -51,8 +53,7 @@ variable "components" {
       instance_type = "t3.micro"
     }
 
-    }
-
+  }
 }
 
 resource "aws_instance" "instances" {

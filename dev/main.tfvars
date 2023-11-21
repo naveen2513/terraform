@@ -36,7 +36,7 @@ components = {
   }
   rabbitmq = {
     name          = "rabbitmq"
-    instance_type = "t3.micro"
+    instance_type = "t2.medium"
     password = "roboshop123"
 
   }
